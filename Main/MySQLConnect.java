@@ -12,12 +12,11 @@ public class MySQLConnect {
         Connection conn = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/projectqtdlieu?"
-                    + "user=root");
-           System.out.println("Noi ket thanh cong");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost/projectqtdlieu", "root", "");
+            System.out.println("Connect database successful");
 
-        } catch (Exception ex) { //xử lý ngoại lệ nếu có
-            System.out.println("Noi ket khong thanh cong");
+        } catch (Exception ex) {
+            System.out.println("Connect database unsuccessful");
             ex.printStackTrace();
         }
         return conn;
