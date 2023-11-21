@@ -2,7 +2,7 @@
 package Main;
 
 import static Main.ProductTypeClass.displayProductType;
-import static Main.ProductTypeClass.tontai_loaisanpham;
+import static Main.ProductTypeClass.productTypeExist;
 import static Main.ProductClass.displayProduct;
 import static Main.ProductClass.productExist;
 import java.sql.CallableStatement;

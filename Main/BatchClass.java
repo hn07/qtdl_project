@@ -1,7 +1,7 @@
 package Main;
 
 import static Main.ProductTypeClass.displayProductType;
-import static Main.ProductTypeClass.tontai_loaisanpham;
+import static Main.ProductTypeClass.productTypeExist;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
